@@ -1,0 +1,17 @@
+项目构建：
+Cmake 文件构建Visual Studio项目
+
+场景：
+1. mesh - 基于三次bezier曲面构建了曲面屏幕，并基于shader开启双面光照; 构建平面作为地面基面
+2. Texture-实时生成并更新桌面模拟纹理
+3. Lighting-支持动态开启/关闭光照效果
+
+渲染：
+1. OffScreen-使用帧缓冲对象(FBO)进行场景渲染
+2. Effect-VR distortion and Chromatic
+
+交互：
+1. 通过鼠标移动实现偏航(yaw)和俯仰(pitch)控制
+2. 通过WASD键实现前后左右移动，空格和Shift实现上下移动
+3. 通过鼠标滚轮控制视野缩放
+4. 按键1：切换VR畸变效果; 按键2：切换光照效果; 按键3：切换双面光照; ESC键：退出程序
